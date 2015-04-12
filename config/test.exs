@@ -17,3 +17,12 @@ config :scratch, Scratch.Repo,
   database: "scratch_test",
   size: 1,
   max_overflow: false
+
+# Configure your database
+config :scratch, Scratch.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "postgres",
+  password: "postgres",
+  database: "scratch_test",
+  size: 1,
+  max_overflow: false

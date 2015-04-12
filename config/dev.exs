@@ -32,3 +32,10 @@ config :scratch, Scratch.Repo,
   username: "postgres",
   password: "postgres",
   database: "scratch_dev"
+
+# Configure your database
+config :scratch, Scratch.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "postgres",
+  password: "postgres",
+  database: "scratch_dev"
